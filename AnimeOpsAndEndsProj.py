@@ -38,7 +38,7 @@ file.write("Openings for " + userN+"'s finished anime list\n\n")
 #Grant Curell's page on how to search for youtube videos with python used for partial reference
 n = 0
 while n < len(animeTitles):
-    query_string = "search_query=" + animeTitles[n].replace(" ", "+") + "+all+openings+and+endings" 
+    query_string = "search_query=" + animeTitles[n].replace(" ", "+") + "+all+openings" 
     html_content = urllib.request.urlopen("http://www.youtube.com/results?" + query_string)
     #use regular expression
     search_results = re.findall(r"watch\?v=(\S{11})", html_content.read().decode())
