@@ -46,6 +46,6 @@ while n < len(animeTitles):
     file.write("\n")
     print("...")
     n+=1
-
+file.write("\nTotal anime completed:  " + n+1)
 file.close()
 print("Done! File has been created, and contains the openings to all of your finished anime! File is named anime_openings.txt. Enjoy!")
